@@ -1,0 +1,269 @@
+<!-- notifications.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="Dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <aside class="Dashboard">
+            <span>
+                <h2>Dashboard</h2>
+                <hr>
+                <div class="liste">
+                    <div><i class="fa-solid fa-gauge-high"></i><a href="index3.html">Tableau de bord</a></div>
+                    <div><i class="fa-solid fa-chart-line"></i><a href="analytics.html">Analytics</a></div>
+                    <div><i class="fa-solid fa-cart-shopping"></i><a href="commandes.html">Commandes</a></div>
+                    <div><i class="fa-solid fa-gears"></i><a href="parametres.html">Paramètres</a></div>
+                    <div><i class="fa-solid fa-chart-bar"></i><a href="rapports.html">Rapports</a></div>
+                    <div><i class="fa-solid fa-bell"></i><a href="notifications.html">Notifications</a></div>
+                </div>
+
+                <div class="bas">
+                    <hr>
+                    <div class="divs">
+                        <span class="admin_gest"><i class="fas fa-user"></i></span>
+                        <p>Administrateur<br>Gestionnaire</p>
+                    </div>
+                    <div class="divss">
+
+                        <a href="#popup" class="buttonn"><i class="fa-solid fa-user" class="Prof"></i>Mon Profil</a>
+                    </div>
+                    <div class="divsss">
+
+                        <button><span><i class="fa-solid fa-right-from-bracket"></i>
+                            </span>Déconnexion</button>
+                    </div>
+                </div>
+            </span>
+        </aside>
+
+        <nav class="nav">
+        <label for="menu-toggle" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
+            <div class="menu-and-title">Gestion de stock - Produits Électroniques</div>
+            <div class="user-info">
+                <span class="cloch">
+                    <i class="fa-solid fa-bell"></i>
+                    <p class="rouge3">3</p>
+                </span>
+                <span class="admin"> <i class="fas fa-user"></i></span>
+                <p>Administrateur</p>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="Tableau_principal">
+                <h1> <i class="fa-solid fa-bell"></i>Notifications & Alertes</h1>
+                <p>Centre de notification et gestion des alertes systèmes</p>
+            </div>
+
+            <div class="stocks">
+                <div class="produits card">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p class="P">12<span>Non lues</span></p>
+                </div>
+                <div class="faible card">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p class="P">3<span>Urgentes</span></p>
+                </div>
+                <div class="total card">
+                    <i class="fa-solid fa-euro-sign"></i>
+                    <p class="P">23<span>Aujourd'hui</span></p>
+                </div>
+                <div class="commandes card">
+                    <i class="fa-solid fa-list"></i></i>
+                    <p class="P">156<span> Total</span></p>
+                </div>
+            </div>
+            <!-- -------------------------------------------------------------------------------------- -->
+            <div class="prm-div div-prmm">
+                <div class="prm prmm">
+                    <p>Type:</p>
+                    <select name="rapport" id="rapport" required>
+                        <option value="" disabled selected>Toutes</option>
+                        <option value="">Stock</option>
+                        <option value="">Commandes</option>
+                        <option value="">Système</option>
+                        <option value="">Sécurité</option>
+
+                    </select>
+                </div>
+                <div class="prm prmm">
+                    <p>Priorité:</p>
+                    <select name="prd" id="prd" required>
+                        <option value="" disabled selected>Toutes</option>
+                        <option value="">Urgent</option>
+                        <option value="">Haute</option>
+                        <option value="">Moyenne</option>
+                        <option value="">Basse</option>
+
+
+                    </select>
+                </div>
+                <div class="prm prmm">
+                    <p>Statut:</p>
+                    <select name="format" id="format" required>
+                        <option value="" disabled selected>Toutes</option>
+                        <option value="">Non lues</option>
+                        <option value="">lues</option>
+
+                    </select>
+                </div>
+                <div class="divprm">
+                    <p> <i class="fa-solid fa-filter"></i>Filtrer</p>
+                </div>
+            </div>
+            <!-- --------------------------------------------------------------------------------------------- -->
+            <div class="grand-alert">
+                <div class="alert excep1">
+                    <div class="donné">
+                        <div>
+                            <h3>Stock critique détecté</h3>
+                            <p> <i class="fa-solid fa-triangle-exclamation"></i>Le produit "Airpods Pro 2" a atteint le
+                                seuil critique de stock (3 unités restantes). Veuillez
+                                passer commande rapidement.</p>
+                        </div>
+                        <div class="pass">
+                            <div class="pas">Passer commande</div>
+                            <div class="pas">Marquer comme lu</div>
+                        </div>
+                    </div>
+                    <div class="heure">
+                        Il y a 5 minutes
+                    </div>
+                </div>
+                <div class="alert excep">
+                    <div class="donné">
+                        <div>
+                            <h3>Nouvelle commande recue</h3>
+                            <p> <i class="fa-solid fa-circle-info"></i>Commande #CDM-2024-004 recu de Marie Dubois
+                                pour
+                                un MacBook Pro 16" (€2,899.00)</p>
+                        </div>
+                        <div class="pass">
+                            <div class="pas">Voir la commande</div>
+                            <div class="pas">Passer commande</div>
+                        </div>
+                    </div>
+                    <div class="heure">
+                        Il y a 15 minutes
+                    </div>
+                </div>
+                <div class="alert">
+                    <div class="donné">
+                        <div>
+                            <h3>Commande Expédiée</h3>
+                            <p> <i class="fa-solid fa-circle-check"></i>Commande #CDM-2024-003 à été expédiée
+                                avecsuccès. Numéro de suivi: FR123456789</p>
+                        </div>
+                        <div class="pase">Suivre l'envoi</div>
+                    </div>
+                    <div class="heure">
+                        Il y a 1 heures
+                    </div>
+                </div>
+                <div class="alert">
+                    <div class="donné">
+                        <div>
+                            <h3>Sauvegarde automatique terminée</h3>
+                            <p> <i class="fa-solid fa-gear"></i>Sauvegarde quotidienne des données
+                                terminée
+                                avec
+                                succès. 2.3 GB de données sauvegardées.</p>
+                        </div>
+                        <div class="pase">Voir détails</div>
+
+                    </div>
+                    <div class="heure">
+                        Il y a 2 heures
+                    </div>
+                </div>
+                <div class="alert">
+                    <div class="donné">
+                        <div>
+                            <h3>Connexion depuis un nouvel appareil</h3>
+                            <p> <i class="fa-solid fa-shield"></i>Connexion détectéé depuis un nouvel
+                                appareil (iphone, paris, France). Si ce n'est pas vous, changez votre mot de passe</p>
+                        </div>
+                        <div class="pase">Sécuriser le compte</div>
+
+                    </div>
+                    <div class="heure">
+                        Il y a 3 heures
+                    </div>
+                </div>
+                <div class="alert">
+                    <div class="donné">
+                        <div>
+                            <label>
+                                <input type="checkbox">
+                                Sélectionner tout
+                            </label>
+                        </div>
+                    </div>
+                    <div class="dives">
+                        <div class="ives"> <i class="fa-solid fa-check"></i>Marquer comme lu</div>
+                        <div class="ives"> <i class="fa-solid fa-trash"></i>Supprimer</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <div id="popup" class="overlay">
+        <div class="pop">
+            <a href="#" class="button">&times;</a>
+
+            <h2>Mon Profil</h2>
+            <hr>
+
+            <i class="fa-solid fa-user" class="Proff"></i>
+            <p>Mon Profil</p>
+
+            <div class="inpflex">
+                <div>
+                    <p>Nom:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Prénom:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="inpflex">
+                <div>
+                    <p>Email:</p>
+                    <input type="emai">
+                </div>
+                <div>
+                    <p>Téléphone:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="info-line">
+                <p>Rôle:</p>
+                <div>Gestionnaire</div>
+            </div>
+
+            <div class="info-line">
+                <p>Dernière connexion:</p>
+                <div>15 janvier 2024 à 14:30</div>
+            </div>
+
+            <div class="action-buttons">
+                <div class="ferm">Fermer</div>
+                <div class="sauv">Sauvegarder</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

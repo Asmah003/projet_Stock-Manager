@@ -1,0 +1,260 @@
+<!-- parametres.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="Dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="container">
+         <input type="checkbox" id="menu-toggle" hidden>
+       
+        <aside class="Dashboard">
+            <span>
+                <h2>Dashboard</h2>
+                <hr>
+                <div class="liste">
+                    <div><i class="fa-solid fa-gauge-high"></i><a href="index3.html">Tableau de bord</a></div>
+                    <div><i class="fa-solid fa-chart-line"></i><a href="analytics.html">Analytics</a></div>
+                    <div><i class="fa-solid fa-cart-shopping"></i><a href="commandes.html">Commandes</a></div>
+                    <div><i class="fa-solid fa-gears"></i><a href="parametres.html">Paramètres</a></div>
+                    <div><i class="fa-solid fa-chart-bar"></i><a href="rapports.html">Rapports</a></div>
+                    <div><i class="fa-solid fa-bell"></i><a href="notifications.html">Notifications</a></div>
+                </div>
+
+                <div class="bas">
+                    <hr>
+                    <div class="divs">
+                        <span class="admin_gest"><i class="fas fa-user"></i></span>
+                        <p>Administrateur<br>Gestionnaire</p>
+                    </div>
+                    <div class="divss">
+
+                        <a href="#popup" class="buttonn"><i class="fa-solid fa-user" class="Prof"></i>Mon Profil</a>
+                    </div>
+                    <div class="divsss">
+
+                        <button><span><i class="fa-solid fa-right-from-bracket"></i>
+                            </span>Déconnexion</button>
+                    </div>
+                </div>
+            </span>
+        </aside>
+
+        <nav class="nav">
+            <div class="menu-and-title"><label for="menu-toggle" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>Gestion de stock - Produits Électroniques</div>
+            <div class="user-info">
+                <span class="cloch">
+                    <i class="fa-solid fa-bell"></i>
+                    <p class="rouge3">3</p>
+                </span>
+                <span class="admin"> <i class="fas fa-user"></i></span>
+                <p>Administrateur</p>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="Tableau_principal">
+                <h1>
+                    <i class="fa-solid fa-gears"></i> Paramètres & Configuration
+                </h1>
+                <p>Configuration du système et préférences utilisateur</p>
+            </div>
+            <div class="para1">
+                <div class="paramètre">
+
+                    <h2> <i class="fa-solid fa-sliders"></i>Paramètres Généraux</h2>
+                </div>
+                <div class="grid1">
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Notifications</h3>
+                            <p>Recevoir des notifications par email</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Mode sombre</h3>
+                            <p>Activer le Thème sombre</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Auto-sauvegarde</h3>
+                            <p>Sauvegarder automatiquement les modifications</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Langue</h3>
+                            <p>Langue de l'interface</p>
+                        </div>
+                        <select name="langue" id="langue">
+                            <option value="" disabled selected>Français</option>
+                            <option value="1">Anglais</option>
+                            <option value="2">Espagnol</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="para1 para2">
+
+                <div class="paramètre">
+
+                    <h2> <i class="fa-solid fa-boxes-stacked"></i>Gestion de stock</h2>
+                </div>
+                <div class="grid1">
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Seuil d'alerte</h3>
+                            <p>Nombre minimum d'articles avant alerte</p>
+                        </div>
+                        <form class="div-8">
+                            <input type="number" name="nombre" min="1" max="11" step="1">
+                        </form>
+                    </div>
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Auto-commande</h3>
+                            <p>Commander automatiquement en cas de stock faible</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="div-param div-8">
+                        <div class="text">
+                            <h3>Devise</h3>
+                            <p>Devise d'affichage</p>
+                        </div>
+                        <select name="devise" id="devise" required>
+                            <option value="" disabled selected>Euro (€)</option>
+                            <option value="">Dollar ($)</option>
+                            <option value="">Livre sterling (£)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="para1 para3">
+
+                <div class="paramètre">
+                    <h2> <i class="fa-solid fa-shield"></i>Sécurité</h2>
+                </div>
+                <div class="grid1">
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Authentification à deux factures</h3>
+                            <p>Activer la 2FA pour plus de sécurité</p>
+                        </div>
+                        <div class="div-5">Activer</div>
+                    </div>
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Changer le mot de passe</h3>
+                            <p>Modifier votre mot de passe actuel</p>
+                        </div>
+                        <div class="div-5-chan">Changer</div>
+                    </div>
+                    <div class="div-param">
+                        <div class="text">
+                            <h3>Sessions actives</h3>
+                            <p>Gérer les sessions connectées</p>
+                        </div>
+                        <div class="div-5_voir">Voir (3)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="para1 para4">
+                <div class="paramètre">
+                    <h2><i class="fa-solid fa-shield"></i> Système</h2>
+                </div>
+               <div class="grid4">
+                 <div class="div-para ">
+                    <p><i class="fa-solid fa-floppy-disk"></i>Sauvegarder la configuration</p>
+                </div>
+                <div class="div-para">
+                    <p> <i class="fa-solid fa-download"></i>Exporter les paramètres</p>
+                </div>
+                <div class="div-para">
+                    <p> <i class="fa-solid fa-arrow-rotate-left"></i>Réinitialiser par défaut</p>
+                </div>
+                <div class="div-para">
+                    <p><i class="fa-solid fa-trash"></i>Effacer toutes les données</p>
+                </div>
+               </div>
+
+            </div>
+
+        </main>
+    </section>
+     <div id="popup" class="overlay">
+        <div class="pop">
+            <a href="#" class="button">&times;</a>
+
+            <h2>Mon Profil</h2>
+            <hr>
+
+            <i class="fa-solid fa-user" class="Proff"></i>
+            <p>Mon Profil</p>
+
+            <div class="inpflex">
+                <div>
+                    <p>Nom:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Prénom:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="inpflex">
+                <div>
+                    <p>Email:</p>
+                    <input type="emai">
+                </div>
+                <div>
+                    <p>Téléphone:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="info-line">
+                <p>Rôle:</p>
+                <div>Gestionnaire</div>
+            </div>
+
+            <div class="info-line">
+                <p>Dernière connexion:</p>
+                <div>15 janvier 2024 à 14:30</div>
+            </div>
+
+            <div class="action-buttons">
+                <div class="ferm">Fermer</div>
+                <div class="sauv">Sauvegarder</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

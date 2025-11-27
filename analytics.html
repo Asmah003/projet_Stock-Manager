@@ -1,0 +1,358 @@
+<!-- analytics.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="Dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <aside class="Dashboard">
+            <span>
+                <h2>Dashboard</h2>
+                <hr>
+                <div class="liste">
+                    <div><i class="fa-solid fa-gauge-high"></i><a href="index3.html">Tableau de bord</a></div>
+                    <div><i class="fa-solid fa-chart-line"></i><a href="analytics.html">Analytics</a></div>
+                    <div><i class="fa-solid fa-cart-shopping"></i><a href="commandes.html">Commandes</a></div>
+                    <div><i class="fa-solid fa-gears"></i><a href="parametres.html">Paramètres</a></div>
+                    <div><i class="fa-solid fa-chart-bar"></i><a href="rapports.html">Rapports</a></div>
+                    <div><i class="fa-solid fa-bell"></i><a href="notifications.html">Notifications</a></div>
+                </div>
+
+                <div class="bas">
+                    <hr>
+                    <div class="divs">
+                        <span class="admin_gest"><i class="fas fa-user"></i></span>
+                        <p>Administrateur<br>Gestionnaire</p>
+                    </div>
+                    <div class="divss">
+
+                        <a href="#popup" class="buttonn"><i class="fa-solid fa-user" class="Prof"></i>Mon Profil</a>
+                    </div>
+                    <div class="divsss">
+
+                        <button><span><i class="fa-solid fa-right-from-bracket"></i>
+                            </span>Déconnexion</button>
+                    </div>
+                </div>
+            </span>
+        </aside>
+
+        <nav class="nav">
+            <div class="menu-and-title"><label for="menu-toggle" class="hamburger-icon"><i
+                        class="fa-solid fa-bars"></i></label>Gestion de stock - Produits Électroniques</div>
+            <div class="user-info">
+                <span class="cloch">
+                    <i class="fa-solid fa-bell"></i>
+                    <p class="rouge3">3</p>
+                </span>
+                <span class="admin"> <i class="fas fa-user"></i></span>
+                <p>Administrateur</p>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="Tableau_principal">
+                <h1><i class="fa-solid fa-chart-line"></i>Analytics & Rapports</h1>
+                <p>Analyse complète des perfomances et tendances</p>
+            </div>
+
+            <div class="stocks">
+                <div class="produits card ana text-group">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div class="flex-i">
+                        <p class="P">
+                            €45,678
+                            <span class="label"> Chiffre d'affaires</span>
+                        </p>
+
+                        <span class="purcent">
+                            +12.5%
+                        </span>
+                    </div>
+                </div>
+                <div class="faible card ana1">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="P">1,234<span> Commandes <p class="purcent">
+                                +8.2%</p>
+                        </span></p>
+                </div>
+                <div class="total card ana2">
+                    <i class="fa-solid fa-users"></i>
+                    <p class="P">856<span> Nouveaux Clients <p class="purcents">
+                                -2.1%</p>
+                        </span></p>
+                </div>
+                <div class="commandes card ana3">
+                    <i class="fa-solid fa-percent"></i>
+                    <p class="P">3.4%<span> Taux de conversion <p class="purcent">
+                                +0.3%</p>
+                        </span></p>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------    -->
+            <div class="two">
+                <div class="one">
+                    <div class="graph">
+                        <section class="stockss">
+                            <h3><i class="fa-solid fa-chart-line"></i>Évolution des Ventes</h3>
+                            <select name="jours" id="jours">
+                                <option value="">7 derniers jours</option>
+                                <option value="1" disabled selected>3O derniers jours</option>
+                                <option value="2">90 derniers jours</option>
+                            </select>
+                        </section>
+                        <div class="bull1">
+                            <div class="bull"></div>
+                            <div class="bar bar1"></div>
+                        </div>
+                        <div class="bar bar2"></div>
+                        <div class="bar bar3"></div>
+                        <div class="bar bar4"></div>
+                        <div class="bar bar5"></div>
+                        <div class="bar bar6"></div>
+                        <div class="bar bar7"></div>
+                        <div class="bar bar8"></div>
+                        <div class="bar bar9"></div>
+                        <div class="bar bar10"></div>
+                        <div class="bar bar11"></div>
+                        <div class="bar bar12"></div>
+                    </div>
+                    <div class="monthly-chart">
+                        <div class="bar-wrapper">
+                            <p class="month">Jan</p>
+                            <p class="value">€8,500</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Fév</p>
+                            <p class="value">€9,200</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Mars</p>
+                            <p class="value">€7,800</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Avr</p>
+                            <p class="value">€9,500</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Mai</p>
+                            <p class="value">€8,800</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Juin</p>
+                            <p class="value">€9,600</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Juil</p>
+                            <p class="value">€8,200</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Août</p>
+                            <p class="value">€8,900</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Sept</p>
+                            <p class="value">€8,900</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Oct</p>
+                            <p class="value">€8,900</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Nov</p>
+                            <p class="value">€8,900</p>
+                        </div>
+                        <div class="bar-wrapper">
+                            <p class="month">Déc</p>
+                            <p class="value">€8,900</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div><i class="fa-solid fa-circle"></i> Ventes Réelles</div>
+                        <div class="circleg"><i class="fa-solid fa-circle"></i> Objectifs</div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------------------------------------------->
+                <div class="second">
+                    <h3><i class="fa-solid fa-chart-line"></i>Répartition par Catégorie</h3>
+                    <div class="lign1">
+                        <p>Smartphone</p>
+                        <p>€15,980</p>
+                    </div>
+                    <div class="lign2">
+                        <p></p>
+                        <p>35%</p>
+                    </div>
+                    <div class="lign1">
+                        <p>Laptops</p>
+                        <p>€11,415</p>
+                    </div>
+                    <div class="lign2">
+                        <p></p>
+                        <p>25%</p>
+                    </div>
+                    <div class="lign1">
+                        <p>Tablettes</p>
+                        <p>€9,132</p>
+                    </div>
+                    <div class="lign2">
+                        <p></p>
+                        <p>20%</p>
+                    </div>
+                    <div class="lign1">
+                        <p>Accessoires</p>
+                        <p>€9,132</p>
+                    </div>
+                    <div class="lign2">
+                        <p></p>
+                        <p>20%</p>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------------------------------------------------------------------------------------------- -->
+            <div class="topp">
+                <div class="topflex">
+                    <div parttop>
+                        <h2><i class="fa-solid fa-trophy"></i> Top Produits</h2>
+                    </div>
+                    <select name="vente" id="vente">
+                        <option value="" disabled selected>Par vente</option>
+                        <option value="1">Par vente</option>
+                        <option value="2">Par revenus</option>
+                        <option value="2">Par marge</option>
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rang</th>
+                            <th>Produit</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Ventes</th>
+                            <th>Revenus</th>
+                            <th>Marge</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="elements_greyy">
+                            <td class="coloor">
+                                <p>1</p>
+                            </td>
+                            <td>
+
+                                <p>
+                                    <i class="fa-solid fa-mobile"></i> iphone 15 Pro
+                                </p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>234</td>
+                            <td>€280,866</td>
+                            <td>€42,130</td>
+                        </tr>
+                        <tr>
+                            <td class="coloor">
+                                <p>2</p>
+                            </td>
+                            <td>
+
+                                <p>
+                                    <i class="fa-solid fa-laptop"></i> MacBook Pro
+                                </p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>89</td>
+                            <td>€257,911</td>
+                            <td>€51,582</td>
+
+                        </tr>
+                        <tr class="elements_greyy">
+                            <td class="coloor">
+                                <p>3</p>
+                            </td>
+                            <td>
+
+                                <p>
+                                    <i class="fa-solid fa-laptop"></i> AirPods Pro
+                                </p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>445</td>
+                            <td>€124,155</td>
+                            <td>€18,623</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </section>
+
+    <div id="popup" class="overlay">
+        <div class="pop">
+            <a href="#" class="button">&times;</a>
+
+            <h2>Mon Profil</h2>
+            <hr>
+
+            <i class="fa-solid fa-user" class="Proff"></i>
+            <p>Mon Profil</p>
+
+            <div class="inpflex">
+                <div>
+                    <p>Nom:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Prénom:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="inpflex">
+                <div>
+                    <p>Email:</p>
+                    <input type="emai">
+                </div>
+                <div>
+                    <p>Téléphone:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="info-line">
+                <p>Rôle:</p>
+                <div>Gestionnaire</div>
+            </div>
+
+            <div class="info-line">
+                <p>Dernière connexion:</p>
+                <div>15 janvier 2024 à 14:30</div>
+            </div>
+
+            <div class="action-buttons">
+                <div class="ferm">Fermer</div>
+                <div class="sauv">Sauvegarder</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

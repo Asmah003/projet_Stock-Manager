@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="container">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <aside class="Dashboard">
+            <span>
+                <h2>Dashboard</h2>
+                <hr>
+                <div class="liste">
+                    <div><i class="fa-solid fa-gauge-high"></i><a href="index3.html">Tableau de bord</a></div>
+                    <div><i class="fa-solid fa-chart-line"></i><a href="analytics.html">Analytics</a></div>
+                    <div><i class="fa-solid fa-cart-shopping"></i><a href="commandes.html">Commandes</a></div>
+                    <div><i class="fa-solid fa-gears"></i><a href="parametres.html">Paramètres</a></div>
+                    <div><i class="fa-solid fa-chart-bar"></i><a href="rapports.html">Rapports</a></div>
+                    <div><i class="fa-solid fa-bell"></i><a href="notifications.html">Notifications</a></div>
+                </div>
+
+                <div class="bas">
+                    <hr>
+                    <div class="divs">
+                        <span class="admin_gest"><i class="fas fa-user"></i></span>
+                        <p>Administrateur<br>Gestionnaire</p>
+                    </div>
+                    <div class="divss">
+
+                        <a href="#popup" class="buttonn"><i class="fa-solid fa-user" class="Prof"></i>Mon Profil</a>
+                    </div>
+                    <div class="divsss">
+
+                        <button><span><i class="fa-solid fa-right-from-bracket"></i>
+                            </span>Déconnexion</button>
+                    </div>
+                </div>
+            </span>
+        </aside>
+
+        <nav class="nav">
+            <div class="menu-and-title"> <label for="menu-toggle" class="hamburger-icon"><i
+                        class="fa-solid fa-bars"></i></label>Gestion de stock - Produits Électroniques</div>
+            <div class="user-info">
+                <span class="cloch">
+                    <i class="fa-solid fa-bell"></i>
+                    <p class="rouge3">3</p>
+                </span>
+                <span class="admin"> <i class="fas fa-user"></i></span>
+                <p>Administrateur</p>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="Tableau_principal">
+                <h1>Tableau de Bord Principal</h1>
+                <p>Gestion des stocks de produits électroniques</p>
+            </div>
+
+            <div class="stocks">
+                <div class="produits card">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <p class="P">1,234<span> Produits en stock</span></p>
+                </div>
+                <div class="faible card">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p class="P">23<span> Stock faible</span></p>
+                </div>
+                <div class="total card">
+                    <i class="fa-solid fa-euro-sign"></i>
+                    <p class="P">€45,678<span> Valeur totale</span></p>
+                </div>
+                <div class="commandes card">
+                    <i class="fa-solid fa-truck"></i>
+                    <p class="P">12<span> Commandes en attente</span></p>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr class="elements_grey">
+                        <th colspan="2">Gestion des Stocks</th>
+
+                        <th colspan="2">
+                            <label>
+                                <input type="text" placeholder=" 🔍   Rechercher un produit..." class="search">
+                            </label>
+                        </th>
+
+                        <th colspan="1">
+                            <button class="btn-search">
+                                <i class="fa-solid fa-plus"></i> Ajouter Produit
+                            </button>
+                        </th>
+
+                        <th colspan="2">
+                            <button class="button">
+                                <i class="fa-solid fa-download"></i> Exporter
+                            </button>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>PRODUIT</th>
+                        <th>CATÉGORIE</th>
+                        <th>STOCK</th>
+                        <th>PRIX</th>
+                        <th>STATUT</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="elements_grey">
+                        <td>#001</td>
+                        <td class="airpod">
+                            <span><i class="fa-solid fa-laptop"></i></span>
+                            <p> MacBook Pro 16" <br>
+                                <span>Apple - M3 Pro</span>
+                            </p>
+                        </td>
+                        <td><span class="violet">LAPTOP</span></td>
+                        <td><span class="vert">15</span></td>
+                        <td>€2,899</td>
+                        <td><span class="vert">Actif</span></td>
+                        <td class="icons"><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#002</td>
+                        <td class="airpod">
+                            <i class="fa-solid fa-mobile"></i>
+                            <p> iphone 15 Pro <br>
+                                <span>Apple - 128GB</span>
+                            </p>
+                        </td>
+                        <td><span class="vert">SMARTPHONE</span></td>
+                        <td><span class="orange">8</span></td>
+                        <td>€1,199</td>
+                        <td><span class="vert">Actif</span></td>
+                        <td class="icons"><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        </td>
+
+                    </tr>
+                    <tr class="elements_grey">
+                        <td>#003</td>
+                        <td class="airpod">
+                            <i class="fa-solid fa-headphones"></i>
+                            <p> AirPods Pro 2<br>
+                                <span>Apple - USB-C</span>
+                            </p>
+                        </td>
+                        <td><span class="orange">AUDIO</span></td>
+                        <td><span class="somon">3</span></td>
+                        <td>€279</td>
+                        <td><span class="orange">Stock Faible</span></td>
+                        <td class="icons"><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        </td>
+
+                    </tr>
+                    <tr class="elements_grey">
+                        <td>#004</td>
+                        <td class="airpod">
+                            <i class="fa-solid fa-tablet"></i>
+                            <p> iPad Air <br>
+                                <span>Apple - 64GB</span>
+                            </p>
+                        </td>
+                        <td><span class="violet">TABLETTE</span></td>
+                        <td><span class="vert">22</span></td>
+                        <td>€649</td>
+                        <td><span class="vert">Actif</span></td>
+                        <td class="icons"><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        </td>
+
+                    </tr>
+                    <tr class="elements_grey">
+                        <td>#005</td>
+                        <td class="airpod">
+                            <i class="fa-solid fa-tv"></i>
+                            <p>Apple TV 4K <br>
+                                <span>128 - WiFi</span>
+                            </p>
+                        </td>
+                        <td><span class="somon">TV</span></td>
+                        <td><span class="orange">12</span></td>
+                        <td>€179</td>
+                        <td><span class="vert">Actif</span></td>
+                        <td class="icons"><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+    </section>
+
+
+    <div id="popup" class="overlay">
+        <div class="pop">
+            <a href="#" class="button">&times;</a>
+
+            <h2>Mon Profil</h2>
+            <hr>
+
+            <i class="fa-solid fa-user" class="Proff"></i>
+            <p>Mon Profil</p>
+
+            <div class="inpflex">
+                <div>
+                    <p>Nom:</p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p>Prénom:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="inpflex">
+                <div>
+                    <p>Email:</p>
+                    <input type="emai">
+                </div>
+                <div>
+                    <p>Téléphone:</p>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="info-line">
+                <p>Rôle:</p>
+                <div>Gestionnaire</div>
+            </div>
+
+            <div class="info-line">
+                <p>Dernière connexion:</p>
+                <div>15 janvier 2024 à 14:30</div>
+            </div>
+
+            <div class="action-buttons">
+                <div class="ferm">Fermer</div>
+                <div class="sauv">Sauvegarder</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
