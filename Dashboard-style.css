@@ -127,8 +127,11 @@ body {
   margin-top: 1rem;
   border: none;
   color: white;
-}
 
+}
+a{
+  text-decoration:none;
+}
 /* partie du nav-header */
 
 nav.nav {
@@ -786,19 +789,6 @@ height:3vh;
  .butn-3 a .btn-search{
 }
 .overlay {
-    visibility: hidden; 
-    opacity: 0;       
-    position: fixed;  
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;    
-    justify-content: center; 
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Animation d'apparition */
-    z-index: 2000; /* Assure que le pop-up est au-dessus de tout */
 }
 
 .overlay:target {
@@ -1403,8 +1393,8 @@ table {
 /* ------------------pop-up--------------------------------------------- */
 .modal-edit-card {
     position: relative;
-    top:-30rem;
-    right:20rem;
+    /* top:-30rem;
+    right:20rem; */
 }
 /* ----------------fin media----------------------------------------- */
 
@@ -1572,10 +1562,25 @@ table {
 
 /*  Modal Overlay (Centrage et Arrière-Plan) */
 .modal-overlay {
-    visibility: hidden;
+
+   visibility: hidden; 
+    opacity: 0;       
+    position: fixed;  
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    /* align-items: center;     */
+    /* justify-content: center;   */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Animation d'apparition */
+    z-index: 2000; /* Assure que le pop-up est au-dessus de tout */
+
+    /* visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
-    z-index: 2000;
+    z-index: 2000; */
 }
 
 .modal-overlay:target {
@@ -1587,7 +1592,8 @@ table {
 .modal-content {
     background: #ffffff;
     border-radius: 10px;
-    width: 30%; 
+    width: 25%; 
+    height:750px;
     max-width: 95%;
     padding: 30px;
     position: relative;
