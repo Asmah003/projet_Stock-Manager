@@ -66,7 +66,7 @@ Font Awesome (Icônes professionnelles).
 ![apercu](./images/media-notifi2.png)
 
 ## lien GitHub page:
-[démo]()
+[démo](https://asmah003.github.io/projet_Stock-Manager/)
 
 ## Expérience Personnelle : Développement de Plateforme
 J'ai conçu et mis en œuvre la plateforme Stock Manager, un outil de gestion des stocks fonctionnel. Ce projet a été réalisé de manière autonome, en tirant parti de recherches approfondies et d'une collaboration constructive avec mes pairs.
